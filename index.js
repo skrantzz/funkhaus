@@ -1,5 +1,4 @@
-var names = {
-    "employees": [
+var names = [
         {
         "firstName": "Aaron",
         "lastName": "Tompkins"
@@ -7,12 +6,93 @@ var names = {
         {
         "firstName": "Angus",
         "lastName": "Wall"
-        }
+        },
+        {
+        "firstName": "Damion",
+        "lastName": "Clayton"
+        },
+        {
+        "firstName": "Jamie",
+        "lastName": "Foord"
+        },
+        {
+        "firstName": "Neil",
+        "lastName": "Meiklejohn"
+        },
+        {
+        "firstName": "Alyssa",
+        "lastName": "Oh"
+        },
+        {
+        "firstName": "Chris",
+        "lastName": "Mitchell"
+        },
+        {
+        "firstName": "Adam",
+        "lastName": "Pertofsky"
+        },
+        {
+        "firstName": "Austyn",
+        "lastName": "Daines"
+        },
+        {
+        "firstName": "Dan",
+        "lastName": "De Winter"
+        },
+        {
+        "firstName": "Lauren",
+        "lastName": "Dellara"
+        },
+        {
+        "firstName": "Olivier",
+        "lastName": "Bugge Coutte"
+        },
+        {
+        "firstName": "Frank",
+        "lastName": "Snider"
+        },
+        {
+        "firstName": "Mikkel",
+        "lastName": "Eg Nielsen"
+        },
+        {
+        "firstName": "Akiko",
+        "lastName": "Iwakawa-Grieve"
+        },
+        {
+        "firstName": "Carlos",
+        "lastName": "Arias"
+        },
+        {
+        "firstName": "David",
+        "lastName": "Brodie"
+        },
+        {
+        "firstName": "Louis-Philippe",
+        "lastName": "Charette"
+        },
+        {
+        "firstName": "Paul",
+        "lastName": "Zucker"
+        },
+        {
+        "firstName": "Ted",
+        "lastName": "Guard"
+        },
+        {
+        "firstName": "Zoe",
+        "lastName": "Mougin"
+        },
+
     ]
-}
-// alert (names.employees.length)
+
 for (i = 0; i < names.length; i++){
-    var output = document.getElementById('jsonData');
-    jsonData.innerHTML = names.employees[i].firstName + ' ' + names.employees[i].lastName;
+    const namesDiv = document.createElement('div');
+    namesDiv.innerHTML = names[i].firstName + ' ' + names[i].lastName;
+    document.getElementById('data').append(namesDiv)
+    // console.log(renderInfo)
 }
+
+
+
 
