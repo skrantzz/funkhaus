@@ -1,8 +1,6 @@
 @font-face {
     font-family: 'RMNeue';
     font-style: normal;
-    font-weight: regular;
-    font-size: 24px;
     src: local('RMNeue'), local('RMNeue-Regular'), url(./fonts/RMNeue-Regular.woff) format('woff');
 }
 
@@ -11,38 +9,46 @@ body {
     color: #efc460;
     font-weight: normal;
     font-family: 'RMNeue', 'Courier New', Courier, monospace;
-    font-size: 19px;   
+    font-size: 24px;   
     justify-content: center
 }
 
-.container {
-    margin: 0 auto;
-    }
-
-li {
-    display: inline;
-}
-
-ul {
-    list-style: none;
-}
-
 nav {
-
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+img {
+    padding: 10px;
+    margin: 10px;
 }
 
 .editors {
     font-size: 18px;
 }
 
-/* main body */
-#data {
+#data-container {
+    
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 30px;
+    padding: 50px;
+    margin: 50px;   
+
     }
+
+.data-item {    
+    flex: 0 1 auto;
+    align-self: auto;
+}
+
+li {
+    list-style: none;
+}
+
+.images {
+    display: inline-flex;
+}

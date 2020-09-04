@@ -87,9 +87,10 @@ var names = [
     ]
 
 for (i = 0; i < names.length; i++){
-    const namesDiv = document.createElement('div');
+    const namesDiv = document.createElement('li');
+    namesDiv.className = "data-item";
     namesDiv.innerHTML = names[i].firstName + ' ' + names[i].lastName;
-    document.getElementById('data').append(namesDiv)
+    document.getElementById('data-container').append(namesDiv)
     // console.log(renderInfo)
 }
 
