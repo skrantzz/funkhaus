@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'RMNeue';
+    font-style: normal;
+    font-weight: regular;
+    font-size: 24px;
+    src: local('RMNeue'), local('RMNeue-Regular'), url(./fonts/RMNeue-Regular.woff) format('woff');
+}
+
+body {
+    background-color: #000000;
+    color: #efc460;
+    font-family: 'RMNeue', 'Courier New', Courier, monospace;
+    font-size: 19px;
+    
+}
+
+li {
+    display: inline;
+}
+
+.navCenter {
+    text-align: center;
+}
+
+.header img {
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+header h1{
+    position: relative;
+    top: 18px;
+    left: 10px;
+
+}
