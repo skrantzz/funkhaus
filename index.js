@@ -46,7 +46,7 @@ var names = [
   {
     firstName: "Jamie",
     lastName: "Foord",
-    hoverEvent: "http://placekitten.com/500/500",
+    hoverEvent: "http://place-puppy.com/400x400",
   },
   {
     firstName: "Frank",
@@ -91,16 +91,20 @@ for (i = 0; i < names.length; i++) {
   namesDiv.className = "data-item";
   namesDiv.innerHTML = names[i].firstName + " " + names[i].lastName;
   document.getElementById("data-container").append(namesDiv);
+  
+  const bgImg = names[i].hoverEvent;
+
+//   if hover event exists logic
   if (names[i].hoverEvent) {
-    namesDiv.addEventListener("mouseover", () => {
-        document.getElementById("data-container").style.backgroundImage = "url(http://placekitten.com/500/500)"
+      namesDiv.addEventListener("mouseover", () => {
+          document.getElementById("data-container").style.backgroundImage = "url(" + bgImg + ")"
+    });
+  } else {
+      namesDiv.addEventListener("mouseleave", () => {
+          document.getElementById("data-container").style.backgroundImage = "url()"
     });
   }
-  // console.log(renderInfo)
 }
 
-// document.getElementById("data-container").addEventListener("mouseover", () => {
-//   console.log("Event!");
-// });
-// let hover = false;
-// document.getElementById;
+
+
